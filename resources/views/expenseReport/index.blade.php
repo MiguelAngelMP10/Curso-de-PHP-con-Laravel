@@ -17,7 +17,7 @@
             <table class="table table-striped">
                 @foreach ($expenseReports as $expenseReport)
                 <tr>
-                    <td>{{$expenseReport->title}}</td>
+                    <td><a href="/expense_reports/{{$expenseReport->id}}">{{$expenseReport->title}}</a></td>
                     <td><a href="/expense_reports/{{$expenseReport->id}}/edit">edit</a></td>
                     <td><a href="/expense_reports/{{$expenseReport->id}}/confirmDelete">Delete</a></td>
                 </tr>
